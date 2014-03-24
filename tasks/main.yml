@@ -1,6 +1,6 @@
 ---
 - name: install jenkins-perl packages loop
-  yum: name={{ item }} state=installed
+  yum: name={{ item }} state=installed enablerepo=epel*
   with_items:
     - perl
     - perl-ExtUtils-MakeMaker
